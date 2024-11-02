@@ -114,18 +114,18 @@ filters:
     id: 1726108381
   - enabled: true
     url: https://fastly.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/rule.txt
-    name: 乘风
+    name: 乘风
     id: 1726108382
   - enabled: true
     url: https://fastly.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/mv.txt
-    name: 乘风视频
+    name: 乘风视频
     id: 1726108383
   - enabled: true
     url: https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-pc.txt
     name: ad-pc
     id: 1728800898
   - enabled: true
-    url: https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt
+    url: https://raw.githubusercontent.com/sbwml/halflife-list/refs/heads/master/ad-pc.txt
     name: ad
     id: 1728800899
 whitelist_filters: []
@@ -138,6 +138,7 @@ user_rules:
   - '@@||snowflake.qq.com^$important'
   - '@@||apd-pcdnwxlogin.teg.tencent-cloud.net^$important'
   - '@@||api-adservices.apple.com^$important'
+  - '@@||s.click.tmall.com^$important'
   - ""
 dhcp:
   enabled: false
@@ -196,34 +197,7 @@ clients:
     rdns: false
     dhcp: true
     hosts: true
-  persistent:
-    - safe_search:
-        enabled: false
-        bing: true
-        duckduckgo: true
-        ecosia: true
-        google: true
-        pixabay: true
-        yandex: true
-        youtube: true
-      blocked_services:
-        schedule:
-          time_zone: UTC
-        ids: []
-      tags: []
-      upstreams:
-        - 1.1.1.1
-        - 8.8.8.8
-      uid: 0192ad29-fc63-7be3-a346-8dfd8702291c
-      upstreams_cache_size: 0
-      upstreams_cache_enabled: false
-      use_global_settings: false
-      filtering_enabled: false
-      parental_enabled: false
-      safebrowsing_enabled: false
-      use_global_blocked_services: false
-      ignore_querylog: false
-      ignore_statistics: false
+  persistent: []
 log:
   enabled: true
   file: ""
