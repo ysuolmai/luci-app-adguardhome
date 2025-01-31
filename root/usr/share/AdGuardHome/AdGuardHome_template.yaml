@@ -90,7 +90,7 @@ tls:
 querylog:
   dir_path: ""
   ignored: []
-  interval: 24h
+  interval: 6h
   size_memory: 1000
   enabled: true
   file_enabled: true
@@ -112,22 +112,6 @@ filters:
     url: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt
     name: ad
     id: 1726108381
-  - enabled: true
-    url: https://fastly.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/rule.txt
-    name: 乘风
-    id: 1726108382
-  - enabled: true
-    url: https://fastly.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/mv.txt
-    name: 乘风视频
-    id: 1726108383
-  - enabled: true
-    url: https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-pc.txt
-    name: ad-pc
-    id: 1728800898
-  - enabled: true
-    url: https://raw.githubusercontent.com/sbwml/halflife-list/refs/heads/master/ad-pc.txt
-    name: ad
-    id: 1728800899
 whitelist_filters: []
 user_rules:
   - '@@||ca.iadsdk.apple.com^$important'
@@ -139,6 +123,9 @@ user_rules:
   - '@@||apd-pcdnwxlogin.teg.tencent-cloud.net^$important'
   - '@@||api-adservices.apple.com^$important'
   - '@@||s.click.tmall.com^$important'
+  - '@@||api.honeygain.com^$important'
+  - '@@||imgcdn.umiwi.com^$important'
+  - '@@||client.earnapp.com^$important'
   - ""
 dhcp:
   enabled: false
